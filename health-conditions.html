@@ -1,48 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WellCare</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-     <style>
-        .high-contrast {
-            background-color: #ffffff;
-            color: #000000;
-        }
-        .button-large {
-            min-height: 60px;
-            font-size: 1.25rem;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WellCare | Health Conditions</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    .button-large {
+      min-height: 60px;
+      font-size: 1.25rem;
+    }
+  </style>
 </head>
-<body>
-    <header class="bg-white">
-  <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-    <div class="flex lg:flex-1">
-      <a href="#" class="-m-1.5 p-1.5">
-        <span class="sr-only">WellCare</span>
-        <h1 class="text-4xl font-extrabold tracking-tight hover:text-blue-600 ">WellCare</h1>
-      </a>
-    </div>
-    <div class="flex lg:hidden">
-      <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-        <span class="sr-only">Open main menu</span>
-        <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
-      </button>
-    </div>
-    <div class="hidden lg:flex lg:gap-x-12">
-      <div class="relative ">
+<body class="bg-gray-50 text-gray-900">
+  <div class="min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-white shadow">
+      <nav class="mx-auto max-w-7xl flex justify-between items-center p-6">
+        <h1 class="text-4xl font-extrabold text-blue-600">WellCare</h1>
+        <div class="hidden lg:flex gap-x-8 text-sm font-semibold">
+          <a href="index.html" class="hover:text-blue-600">Home</a>
+          <a href="health-tips.html" class="hover:text-blue-600">Health Tips</a>
+          <a href="health-conditions.html" class="text-blue-600 border-b-2 border-blue-600">Health Conditions</a>
+          <a href="contact.html" class="hover:text-blue-600">Contact Doctor</a>
+          <a href="emergency.html" class="hover:text-blue-600">Emergency Info</a>
         </div>
-      <a href="index.html" class="text-sm/6 font-semibold text-gray-900 hover:text-blue-600">Home</a>
-      <a href="health-tips.html" class="text-sm/6 font-semibold text-gray-900 hover:text-blue-600">Health Tips</a>
-      <a href="#" class="text-sm/6 font-semibold text-gray-900 hover:text-blue-600">Health Conditions</a>
-      <a href="contact.html" class="text-sm/6 font-semibold text-gray-900 hover:text-blue-600">Contact Doctor</a>
-      <a href="emergency.html" class="text-sm/6 font-semibold text-gray-900 hover:text-blue-600">Emergency Info</a>
-    </div>
-    <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-      <a href="#" class="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
-    </div>
-  </nav>
+        <div class="hidden lg:block">
+          <a href="#" class="text-sm font-semibold hover:text-blue-600">Log in →</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="flex-grow">
+      <section class="py-16 px-6 max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-10">🩺 Common Health Conditions</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
+            <h3 class="text-xl font-semibold">🍬 Diabetes</h3>
+            <p class="mt-2 text-gray-600">Manage blood sugar levels through diet, medication, and exercise.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
+            <h3 class="text-xl font-semibold">❤️ Hypertension</h3>
+            <p class="mt-2 text-gray-600">Keep your blood pressure in check with lifestyle changes and meds.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
+            <h3 class="text-xl font-semibold">🌬️ Asthma</h3>
+            <p class="mt-2 text-gray-600">Avoid triggers and use inhalers to manage breathing issues.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
+            <h3 class="text-xl font-semibold">🦴 Arthritis</h3>
+            <p class="mt-2 text-gray-600">Ease joint pain with physical therapy, meds, and gentle movement.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
+            <h3 class="text-xl font-semibold">🧠 Anxiety</h3>
+            <p class="mt-2 text-gray-600">Practice mindfulness and seek support to manage mental stress.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
+            <h3 class="text-xl font-semibold">🩸 Anemia</h3>
+            <p class="mt-2 text-gray-600">Boost iron intake and follow medical advice to improve energy.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t mt-12">
+      <div class="max-w-7xl mx-auto px-4 py-6 text-center text-sm text-gray-500">
+        &copy; 2025 WellCare. All rights reserved.
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
