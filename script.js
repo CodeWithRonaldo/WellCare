@@ -71,7 +71,7 @@ function addCondition(
   conditions[conditions.length] = newCondition;
   console.log("Condition added: ", newCondition);
 }
-
+addCondition("Malaria", ["fever", "chills", "sweating"], "Use anti-malaria drugs", "Avoid mosquito bites", "Severe", "See doctor immediately");
 // lets search by symptoms
 
 function searchBySymptoms(symptom) {
@@ -99,6 +99,7 @@ function searchBySymptoms(symptom) {
     console.log("No condition found with the symptom: ", symptom);
   }
 }
+searchBySymptoms("fever");
 
 // lets list all symptoms
 
@@ -129,3 +130,5 @@ function listAllSymptoms() {
     console.log("-" + listAllSymptoms[i]);
   }
 }
+
+listAllSymptoms();
